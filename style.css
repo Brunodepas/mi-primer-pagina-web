@@ -1,0 +1,268 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    font-family: 'Roboto',sans-serif;
+}
+h1{
+    font-size: 3.5em;
+}
+h2{
+    font-size: 2.5em;
+}
+h3{
+    font-size: 1.5em;
+}
+p{
+    font-size: 1.50em;
+}
+ul{
+    list-style: none;
+}
+button{
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.5);
+    color: white;
+    background-color: rgba(28, 28, 167, 0.856);
+}
+button:hover{
+    background-color: rgba(6, 6, 59, 0.925);
+}
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+header{
+    background-color: rgb(220,220,220);
+}
+header .logo{
+    margin: 0;
+    padding: 25px 35px;
+    font-weight: bold;
+    font-size: 1.6em;
+    color: rgba(28, 28, 167, 0.856);
+}
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+header a{
+    padding: 5px 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+header a:hover{
+    color: rgba(28, 28, 167, 0.856);
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 95vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg
+        ,rgba(0,0,0,0.5)
+        ,rgba(0,0,0,0.5)
+        )
+        ,url(media/Fondo1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+}
+/* #nosotros{
+
+} */
+#nosotros .container{
+    text-align: center;
+    padding: 250px 10px;
+}
+.pg{
+    color: rgba(28, 28, 167, 0.856);
+}
+#cursos{
+    background-color: rgb(40,40,40);
+    color: white;
+    text-align: center;
+}
+#cursos .container{
+    padding: 150px 20px;
+}
+#cursos p{
+    display: none;
+}
+#cursos h2{
+    margin-top: 0;
+    font-size: 4em;
+}
+#cursos .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 20px;
+    border-radius: 20px;
+}
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg
+        ,rgba(0,0,0,0.5)
+        ,rgba(0,0,0,0.5)
+        )
+        ,url(media/Programacion-Basica.jpg);
+}
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg
+        ,rgba(0,0,0,0.5)
+        ,rgba(0,0,0,0.5)
+        )
+        ,url(media/Programacion-Web.jpg);
+}
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg
+        ,rgba(0,0,0,0.5)
+        ,rgba(0,0,0,0.5)
+        )
+        ,url(media/Programacion-Python.jpg);
+}
+#caracteristicas .container{
+    text-align: center;
+    padding: 150px 20px;
+}
+#caracteristicas li{
+    margin: 50px 0px;
+    font-weight: bold;
+}
+#aplica{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(40,40,40);
+    color: white;
+    height: 80vh;
+}
+#aplica h2{
+    font-size: 10vw;
+}
+#aplica button{
+    font-size: 5vw;
+}
+footer{
+    background-color: rgb(220,220,220);
+}
+footer p{
+    margin: 0;
+    padding: 10px;
+    color: rgb(120,120,120);
+}
+footer .container{
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+@media (min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+    .hero button{
+        font-size: 2em;
+    }
+    #nosotros .container{
+        display: flex;
+        justify-content: center;
+    }
+    #nosotros .texto{
+        width: 50%;
+
+        text-align: initial;
+        padding: 0px 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #nosotros h2{
+        margin-top: 0px;
+    }
+    #nosotros .img-container{
+        background-image: url(media/Fondo2.jpg);
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+    #cursos .programas{
+        display: flex;
+        justify-content: center;
+    }
+    #cursos p{
+        display: block;
+        margin-bottom: 50px;
+        background-color: rgb(120,120,120);
+        border-radius: 20px;
+    }
+    #cursos h3{
+        margin-top: 0;
+    }
+    #cursos .carta{
+        padding: 20px;
+    }
+    #caracteristicas .container{
+        display: flex;
+        justify-content: center;
+    }
+    #caracteristicas .img-container{
+        background-image: url(media/programador-que-trabaja-desarrollo-web-pantalla-computadora-virtual-ingenieria-software-concepto-codificacion-secuencias-comandos-ilustracion-vector-dibujado-mano-aislada-sobre-fondo-claro-estilo-dibujos-animados-plana_318237-364.webp);
+        background-size: cover;
+        background-position: center center;
+        height: 400px;
+        width: 400px;
+        background-repeat: no-repeat;
+        border: 2px solid black;
+        border-radius: 15px;
+    }
+    #caracteristicas li{
+        font-size: 2em;
+        text-align: start;
+    }
+    #aplica h2{
+        font-size: 5em;
+    }
+    #aplica button{
+        font-size: 2.5em;
+    }
+    footer .container{
+        justify-content: flex-end;
+        font-size: 10px;
+    }
+}
